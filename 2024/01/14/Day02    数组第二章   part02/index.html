@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Day02 | 张正道</title>
+  <title>Day02    数组第二章   part02 | 张正道</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="977.有续数组的平方题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数）示例 1：  输入：nums &#x3D; [-4,-1,0,3,10] 输出：[0,1,9,16,100] 解释：平方后，数组变为 [16,1,0,9,100]，排序后，数组变为 [0,1,9,16,100]  示例 2：  输入：nums &amp;#">
+  <meta name="description" content="# 977. 有续数组的平方 # 题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数） 示例 1：  输入：nums &#x3D; [-4,-1,0,3,10] 输出：[0,1,9,16,100] 解释：平方后，数组变为 [16,1,0,9,100]，排序后，数组变为 [0,1,9,16,100]  示例 2：  输入：nums">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Day02">
-<meta property="og:url" content="https://xsngro.github.io/2024/01/14/Day02/index.html">
+<meta property="og:title" content="Day02    数组第二章   part02">
+<meta property="og:url" content="https://xsngro.github.io/2024/01/14/Day02%20%20%20%20%E6%95%B0%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%20%20part02/index.html">
 <meta property="og:site_name" content="张正道">
-<meta property="og:description" content="977.有续数组的平方题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数）示例 1：  输入：nums &#x3D; [-4,-1,0,3,10] 输出：[0,1,9,16,100] 解释：平方后，数组变为 [16,1,0,9,100]，排序后，数组变为 [0,1,9,16,100]  示例 2：  输入：nums &amp;#">
+<meta property="og:description" content="# 977. 有续数组的平方 # 题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数） 示例 1：  输入：nums &#x3D; [-4,-1,0,3,10] 输出：[0,1,9,16,100] 解释：平方后，数组变为 [16,1,0,9,100]，排序后，数组变为 [0,1,9,16,100]  示例 2：  输入：nums">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-01-14T14:24:01.000Z">
-<meta property="article:modified_time" content="2024-01-14T14:31:57.307Z">
+<meta property="article:published_time" content="2024-01-14T14:16:32.000Z">
+<meta property="article:modified_time" content="2024-01-15T07:42:06.697Z">
 <meta property="article:author" content="zzd">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -80,10 +80,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Day02" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Day02    数组第二章   part02" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/01/14/Day02/" class="article-date">
-  <time class="dt-published" datetime="2024-01-14T14:24:01.000Z" itemprop="datePublished">2024-01-14</time>
+    <a href="/2024/01/14/Day02%20%20%20%20%E6%95%B0%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%20%20part02/" class="article-date">
+  <time class="dt-published" datetime="2024-01-14T14:16:32.000Z" itemprop="datePublished">2024-01-14</time>
 </a>
     
   </div>
@@ -94,7 +94,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Day02
+      Day02    数组第二章   part02
     </h1>
   
 
@@ -102,76 +102,81 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="977-有续数组的平方"><a href="#977-有续数组的平方" class="headerlink" title="977.有续数组的平方"></a>977.有续数组的平方</h2><h3 id="题目：给你一个按-非递减顺序-排序的整数数组-nums，返回-每个数字的平方-组成的新数组，要求也按-非递减顺序-排序。（有负数）"><a href="#题目：给你一个按-非递减顺序-排序的整数数组-nums，返回-每个数字的平方-组成的新数组，要求也按-非递减顺序-排序。（有负数）" class="headerlink" title="题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数）"></a>题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数）</h3><p>示例 1：</p>
+        <h2 id="977有续数组的平方"><a class="markdownIt-Anchor" href="#977有续数组的平方">#</a> 977. 有续数组的平方</h2>
+<h3 id="题目给你一个按-非递减顺序-排序的整数数组-nums返回-每个数字的平方-组成的新数组要求也按-非递减顺序-排序-有负数"><a class="markdownIt-Anchor" href="#题目给你一个按-非递减顺序-排序的整数数组-nums返回-每个数字的平方-组成的新数组要求也按-非递减顺序-排序-有负数">#</a> 题目：给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。（有负数）</h3>
+<p>示例 1：</p>
 <ul>
-<li>输入：nums &#x3D; [-4,-1,0,3,10]</li>
+<li>输入：nums = [-4,-1,0,3,10]</li>
 <li>输出：[0,1,9,16,100]</li>
 <li>解释：平方后，数组变为 [16,1,0,9,100]，排序后，数组变为 [0,1,9,16,100]</li>
 </ul>
 <p>示例 2：</p>
 <ul>
-<li>输入：nums &#x3D; [-7,-3,2,3,11]</li>
+<li>输入：nums = [-7,-3,2,3,11]</li>
 <li>输出：[4,9,9,49,121]</li>
 </ul>
-<p>视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1QB4y1D7ep/?spm_id_from=333.337.search-card.all.click&vd_source=e0e7d9473b1926d5432c3c9db17fd187">https://www.bilibili.com/video/BV1QB4y1D7ep/?spm_id_from=333.337.search-card.all.click&amp;vd_source=e0e7d9473b1926d5432c3c9db17fd187</a></p>
-<p>文章链接：<a target="_blank" rel="noopener" href="https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE">https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE</a></p>
-<p>我的第一想法：平方后再用sort排序。（时间复杂度太高了）</p>
-<h4 id="双指针解法"><a href="#双指针解法" class="headerlink" title="双指针解法"></a>双指针解法</h4><p>解决办法：由于数组有正有负，所以要从两边开始，定义两个指针从两头开始填如果负数的平方大于正数的平方，那就先填负数。反之。填完后将该指针向中间移动。</p>
+<p>视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1QB4y1D7ep/?spm_id_from=333.337.search-card.all.click&amp;vd_source=e0e7d9473b1926d5432c3c9db17fd187">https://www.bilibili.com/video/BV1QB4y1D7ep/?spm_id_from=333.337.search-card.all.click&amp;vd_source=e0e7d9473b1926d5432c3c9db17fd187</a></p>
+<p>文章链接：<a target="_blank" rel="noopener" href="https://programmercarl.com/0977.%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E5%B9%B3%E6%96%B9.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE">https://programmercarl.com/0977. 有序数组的平方.html# 算法公开课</a></p>
+<p>我的第一想法：平方后再用 sort 排序。（时间复杂度太高了）</p>
+<h4 id="双指针解法"><a class="markdownIt-Anchor" href="#双指针解法">#</a> 双指针解法</h4>
+<p>解决办法：由于数组有正有负，所以要从两边开始，定义两个指针从两头开始填如果负数的平方大于正数的平方，那就先填负数。反之。填完后将该指针向中间移动。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] sortedSquares(<span class="type">int</span>[] nums) &#123;</span><br><span class="line">        <span class="type">int</span> news[]=<span class="keyword">new</span> <span class="title class_">int</span>[nums.length];</span><br><span class="line">        <span class="type">int</span> i,j,k=news.length-<span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>,j=nums.length-<span class="number">1</span>;i&lt;=j;)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i]*nums[i]&gt;nums[j]*nums[j])&#123;</span><br><span class="line">                news[k]=nums[i]*nums[i];</span><br><span class="line">                i++;</span><br><span class="line">                k--;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                news[k]=nums[j]*nums[j];</span><br><span class="line">                j--;</span><br><span class="line">                k--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> news;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>易错点：i&lt;&#x3D;j,因为i&#x3D;j的时候可能还有一个元素。</p>
-<h2 id="209-长度最小的子数组"><a href="#209-长度最小的子数组" class="headerlink" title="209.长度最小的子数组"></a>209.长度最小的子数组</h2><h3 id="题目：给定一个含有-n-个正整数的数组和一个正整数-s-，找出该数组中满足其和-≥-s-的长度最小的-连续-子数组，并返回其长度。如果不存在符合条件的子数组，返回-0。"><a href="#题目：给定一个含有-n-个正整数的数组和一个正整数-s-，找出该数组中满足其和-≥-s-的长度最小的-连续-子数组，并返回其长度。如果不存在符合条件的子数组，返回-0。" class="headerlink" title="题目：给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的 连续 子数组，并返回其长度。如果不存在符合条件的子数组，返回 0。"></a>题目：给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的 连续 子数组，并返回其长度。如果不存在符合条件的子数组，返回 0。</h3><p>示例：</p>
+<p>易错点：i&lt;=j, 因为 i=j 的时候可能还有一个元素。</p>
+<h2 id="209长度最小的子数组"><a class="markdownIt-Anchor" href="#209长度最小的子数组">#</a> 209. 长度最小的子数组</h2>
+<h3 id="题目给定一个含有-n-个正整数的数组和一个正整数-s-找出该数组中满足其和-s-的长度最小的-连续-子数组并返回其长度-如果不存在符合条件的子数组返回-0"><a class="markdownIt-Anchor" href="#题目给定一个含有-n-个正整数的数组和一个正整数-s-找出该数组中满足其和-s-的长度最小的-连续-子数组并返回其长度-如果不存在符合条件的子数组返回-0">#</a> 题目：给定一个含有 n 个正整数的数组和一个正整数 s ，找出该数组中满足其和 ≥ s 的长度最小的 连续 子数组，并返回其长度。如果不存在符合条件的子数组，返回 0。</h3>
+<p>示例：</p>
 <ul>
-<li>输入：s &#x3D; 7, nums &#x3D; [2,3,1,2,4,3]</li>
+<li>输入：s = 7, nums = [2,3,1,2,4,3]</li>
 <li>输出：2</li>
 <li>解释：子数组 [4,3] 是该条件下的长度最小的子数组。</li>
 </ul>
 <p>提示：</p>
 <ul>
-<li>1 &lt;&#x3D; target &lt;&#x3D; 10^9</li>
-<li>1 &lt;&#x3D; nums.length &lt;&#x3D; 10^5</li>
-<li>1 &lt;&#x3D; nums[i] &lt;&#x3D; 10^5</li>
+<li>1 &lt;= target &lt;= 10^9</li>
+<li>1 &lt;= nums.length &lt;= 10^5</li>
+<li>1 &lt;= nums[i] &lt;= 10^5</li>
 </ul>
-<p>视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tZ4y1q7XE/?spm_id_from=333.788&vd_source=e0e7d9473b1926d5432c3c9db17fd187">https://www.bilibili.com/video/BV1tZ4y1q7XE/?spm_id_from=333.788&amp;vd_source=e0e7d9473b1926d5432c3c9db17fd187</a></p>
-<p>文章链接：<a target="_blank" rel="noopener" href="https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html#%E6%80%9D%E8%B7%AF">https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html#%E6%80%9D%E8%B7%AF</a></p>
+<p>视频链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tZ4y1q7XE/?spm_id_from=333.788&amp;vd_source=e0e7d9473b1926d5432c3c9db17fd187">https://www.bilibili.com/video/BV1tZ4y1q7XE/?spm_id_from=333.788&amp;vd_source=e0e7d9473b1926d5432c3c9db17fd187</a></p>
+<p>文章链接：<a target="_blank" rel="noopener" href="https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html#%E6%80%9D%E8%B7%AF">https://programmercarl.com/0209. 长度最小的子数组.html# 思路</a></p>
 <p>第一眼：把所有的情况遍历一遍。（但不知道怎么做）</p>
-<p>看视频开头后：可以用两个for循环，一个代表左指针（i），一个是右指针（j），每到j移动时，就将它所对应的数字求和（sum），当和大于给定数字时记录j-i的长度。</p>
-<p>解析：窗口就是满足最小长度的数组，&gt;缩i，&lt;扩j。</p>
-<h6 id="小工具：1-Math-min（a-b）可以比较出最小值。-2-Integer-MAX-VALUE可以得出int类型最大的数，当判断是否执行数不能-1时用这个标记。"><a href="#小工具：1-Math-min（a-b）可以比较出最小值。-2-Integer-MAX-VALUE可以得出int类型最大的数，当判断是否执行数不能-1时用这个标记。" class="headerlink" title="小工具：1.Math.min（a,b）可以比较出最小值。 2.Integer.MAX_VALUE可以得出int类型最大的数，当判断是否执行数不能-1时用这个标记。"></a>小工具：1.Math.min（a,b）可以比较出最小值。 2.Integer.MAX_VALUE可以得出int类型最大的数，当判断是否执行数不能-1时用这个标记。</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">minSubArrayLen</span><span class="params">(<span class="type">int</span> target, <span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> j,i=<span class="number">0</span>,sum=<span class="number">0</span>,lon=Integer.MAX_VALUE;<span class="comment">//i为起始位置，j为终止位置,lon为长度</span></span><br><span class="line">        <span class="keyword">for</span>(j=i;j&lt;nums.length;j++)&#123;</span><br><span class="line">            sum+=nums[j];</span><br><span class="line">            <span class="keyword">while</span>(sum&gt;=target)&#123;</span><br><span class="line">                lon=Math.min(lon,j-i+<span class="number">1</span>);</span><br><span class="line">               sum-=nums[i];</span><br><span class="line">                i++;</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> lon==Integer.MAX_VALUE?<span class="number">0</span>:lon;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>易错点：1.lon不能为-1，因为后面是比长度谁小。</p>
-<p>2.long是关键字（细节错误，下回用result）</p>
-<p>3.不能用if因为i不确定要移动几次。</p>
-<p>4.求长度的时候要+1</p>
-<h2 id="59-螺旋矩阵II"><a href="#59-螺旋矩阵II" class="headerlink" title="59.螺旋矩阵II"></a>59.螺旋矩阵II</h2><p>题目：给你一个正整数 <code>n</code> ，生成一个包含 <code>1</code> 到 <code>n2</code> 所有元素，且元素按顺时针顺序螺旋排列的 <code>n x n</code> 正方形矩阵 <code>matrix</code> 。</p>
+<p>看视频开头后：可以用两个 for 循环，一个代表左指针（i），一个是右指针（j），每到 j 移动时，就将它所对应的数字求和（sum），当和大于给定数字时记录 j-i 的长度。</p>
+<p>解析：窗口就是满足最小长度的数组，&gt; 缩 i，&lt; 扩 j。</p>
+<h6 id="小工具1mathminab可以比较出最小值-2integermax_value可以得出int类型最大的数当判断是否执行数不能-1时用这个标记"><a class="markdownIt-Anchor" href="#小工具1mathminab可以比较出最小值-2integermax_value可以得出int类型最大的数当判断是否执行数不能-1时用这个标记">#</a> 小工具：1.Math.min（a,b）可以比较出最小值。 2.Integer.MAX_VALUE 可以得出 int 类型最大的数，当判断是否执行数不能 - 1 时用这个标记。</h6>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">minSubArrayLen</span><span class="params">(<span class="type">int</span> target, <span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> j,i=<span class="number">0</span>,sum=<span class="number">0</span>,lon=Integer.MAX_VALUE;<span class="comment">//i为起始位置，j为终止位置,lon为长度</span></span><br><span class="line">        <span class="keyword">for</span>(j=i;j&lt;nums.length;j++)&#123;</span><br><span class="line">            sum+=nums[j];</span><br><span class="line">            <span class="keyword">while</span>(sum&gt;=target)&#123;</span><br><span class="line">                lon=Math.min(lon,j-i+<span class="number">1</span>);</span><br><span class="line">               sum-=nums[i];</span><br><span class="line">                i++;</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> lon==Integer.MAX_VALUE?<span class="number">0</span>:lon;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>易错点：1.lon 不能为 - 1，因为后面是比长度谁小。</p>
+<p>2.long 是关键字（细节错误，下回用 result）</p>
+<p>3. 不能用 if 因为 i 不确定要移动几次。</p>
+<p>4. 求长度的时候要 + 1</p>
+<h2 id="59螺旋矩阵ii"><a class="markdownIt-Anchor" href="#59螺旋矩阵ii">#</a> 59. 螺旋矩阵 II</h2>
+<p>题目：给你一个正整数  <code>n</code>  ，生成一个包含  <code>1</code>  到  <code>n2</code>  所有元素，且元素按顺时针顺序螺旋排列的  <code>n x n</code>  正方形矩阵  <code>matrix</code>  。</p>
 <p><strong>示例 1：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：n = 3</span><br><span class="line">输出：[[1,2,3],[8,9,4],[7,6,5]]</span><br></pre></td></tr></table></figure>
-
 <p><strong>示例 2：</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：n = 1</span><br><span class="line">输出：[[1]]</span><br></pre></td></tr></table></figure>
-
 <p><strong>提示：</strong></p>
 <ul>
 <li><code>1 &lt;= n &lt;= 20</code></li>
 <li>提示：处理好边界！</li>
 </ul>
-<p>解法：首先while遍历1到n方，设置四个边界，用for循环依次填写每个边界，填写完后记得移动边界。</p>
+<p>解法：首先 while 遍历 1 到 n 方，设置四个边界，用 for 循环依次填写每个边界，填写完后记得移动边界。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[][] generateMatrix(<span class="type">int</span> n) &#123;</span><br><span class="line">        <span class="type">int</span> arr[][]=<span class="keyword">new</span> <span class="title class_">int</span>[n][n];</span><br><span class="line">  <span class="type">int</span> <span class="variable">top</span> <span class="operator">=</span> <span class="number">0</span>, left = <span class="number">0</span>, right = n - <span class="number">1</span>, botton = n - <span class="number">1</span>, num = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (num &lt;= n * n) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> left; i &lt;= right; i++) &#123;</span><br><span class="line">                arr[top][i] = num++;</span><br><span class="line">            &#125;</span><br><span class="line">            top++;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> top; i &lt;= botton; i++) &#123;</span><br><span class="line">                arr[i][right] = num++;</span><br><span class="line">            &#125;</span><br><span class="line">            right--;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> right; i &gt;= left; i--) &#123;</span><br><span class="line">                arr[botton][i] = num++;</span><br><span class="line">            &#125;</span><br><span class="line">            botton--;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> botton; i &gt;= top; i--) &#123;</span><br><span class="line">                arr[i][left] = num++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (botton == top &amp;&amp; left == right) &#123;</span><br><span class="line">                arr[top][left] = num;</span><br><span class="line">            &#125;</span><br><span class="line">            left++;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数组总结"><a href="#数组总结" class="headerlink" title="数组总结"></a>数组总结</h2><p>题型：</p>
-<p>1.双指针</p>
-<p>2.二分法</p>
-<p>3.滑动窗口</p>
-<p>4.模拟行为（转圈）</p>
+<h2 id="数组总结"><a class="markdownIt-Anchor" href="#数组总结">#</a> 数组总结</h2>
+<p>题型：</p>
+<p>1. 双指针</p>
+<p>2. 二分法</p>
+<p>3. 滑动窗口</p>
+<p>4. 模拟行为（转圈）</p>
 <p>个人感受：如果没有讲解的提示，我可能得想好久。对于滑动窗口和螺旋矩阵我还不熟练，需要多多练习。今天学习了两个小时，加油。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xsngro.github.io/2024/01/14/Day02/" data-id="clrdlhvy90002ssb7392ldy5p" data-title="Day02" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://xsngro.github.io/2024/01/14/Day02%20%20%20%20%E6%95%B0%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%20%20part02/" data-id="clremcqao0006b8b784okd3up" data-title="Day02    数组第二章   part02" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+
     </footer>
   </div>
   
@@ -233,7 +238,7 @@
       <ul>
         
           <li>
-            <a href="/2024/01/14/Day02/">Day02</a>
+            <a href="/2024/01/14/Day02%20%20%20%20%E6%95%B0%E7%BB%84%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%20%20part02/">Day02    数组第二章   part02</a>
           </li>
         
           <li>
